@@ -23,12 +23,12 @@
           <div class="name-container input-box">
             <label for="name" class="sr-only">Nombre</label>
             <input type="text" id="name" class="form-control"
-            placeholder="Ingrese su nombre">
+            placeholder="Ingrese su nombre" onkeyup="" ="checkInput(event)" >
           </div>
           <div class="lastname-container input-box">
             <label for="lastname" class="sr-only">Apellido</label>
             <input type="text" id="lastname" class="form-control"
-            placeholder="Ingrese su apellido">
+            placeholder="Ingrese su apellido" onKeyDown="checkInput(event)">
           </div>
           <div class="email-container input-box">
             <label for="inputEmail" class="sr-only">
@@ -43,7 +43,7 @@
             <input type="password" id="input-password" class="form-control" placeholder="Ingrese su contraseña">
           </div>
           <div class="form-group">
-            <select class="form-control">
+            <select class="form-control" id="opciones" onClick="selectBici()">
               <option value="0">Selecciona tu tipo de bici</option>
               <option value="urbana">Urbana</option>
               <option value="treking">Treking</option>
